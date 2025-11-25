@@ -1,5 +1,6 @@
 package com.creators.youbank_dummy.entity;
 
+import com.creators.youbank_dummy.entity.common.Customer;
 import jakarta.persistence.*;
 import lombok.*;
 

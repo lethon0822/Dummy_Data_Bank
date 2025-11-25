@@ -1,8 +1,8 @@
-package com.creators.youbank_dummy.application;
+package com.creators.youbank_dummy.application.common;
 
 import com.creators.youbank_dummy.Dummy;
-import com.creators.youbank_dummy.entity.BankAccount;
-import com.creators.youbank_dummy.entity.Customer;
+import com.creators.youbank_dummy.entity.common.BankAccount;
+import com.creators.youbank_dummy.entity.common.Customer;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -17,8 +17,10 @@ import java.util.concurrent.ThreadLocalRandom;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class BankAccountDummy extends Dummy {
 
-    @Autowired CustomerRepository customerRepository;
-    @Autowired BankAccountRepository bankAccountRepository;
+    @Autowired
+    CustomerRepository customerRepository;
+    @Autowired
+    BankAccountRepository bankAccountRepository;
     List<Customer> customerList;
 
     @BeforeAll

@@ -1,4 +1,4 @@
-package com.creators.youbank_dummy.entity;
+package com.creators.youbank_dummy.entity.common;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
